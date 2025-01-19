@@ -13,7 +13,7 @@ WER on the test set: 0.8435
 
 Trained:
 
-Word Error Rate (WER) on the test set: 0.3799
+Word Error Rate (WER) on the test set: 0.3216
 
 |     Original Text     |     Transcription     |
 |-----------------------|-----------------------|
