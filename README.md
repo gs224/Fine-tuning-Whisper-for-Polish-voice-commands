@@ -1,7 +1,7 @@
 # Fine-tuning Whisper for Polish voice commands
 
 ## Results
-Before tine-tuning::
+Before tine-tuning:
 
 WER on the test set: 0.8435
 
