@@ -1,7 +1,7 @@
-# Fine tuning Whisper for Polish voice commands
+# Fine-tuning Whisper for Polish voice commands
 
 ## Results
-Untrained (not fine-tuned):
+Before tine-tuning::
 
 WER on the test set: 0.8435
 
@@ -13,7 +13,7 @@ WER on the test set: 0.8435
 | nowe aktualności | Nowe aktualności. |
 | czy mogę zamówić dostawę z tej restauracji | Czy mogę zamówić dostawę ustaj restauracji? |
 
-Trained (fine tuned):
+After fine-tuning:
 
 Word Error Rate (WER) on the test set: 0.3216
 
