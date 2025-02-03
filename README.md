@@ -1,26 +1,18 @@
 # Fine-tuning Whisper for Polish voice commands
 
 ## Results
-Before tine-tuning:
+### Word Error Rate on the test set:
 
-WER on the test set: 0.8435
+| Base model | Fine-tuned model |
+|------------|------------------|
+| 0.8435 | 0.3176 |
 
-|     Ground Truth     |     Transcription     |
-|----------------------|-----------------------|
-| jaki film jest teraz najwyżej oceniany | Jak i film jest teraz najwyżlioteniony |
-| czy są jakieś informacje o prezydenturze | Czy są jakieś informacje o prezetyntu, że |
-| usuń następne wydarzenie dzisiaj | Musun na stampę wydarzenie dzisiaj. |
-| nowe aktualności | Nowe aktualności. |
-| czy mogę zamówić dostawę z tej restauracji | Czy mogę zamówić dostawę ustaj restauracji? |
+### Example sentences:
 
-After fine-tuning:
-
-Word Error Rate (WER) on the test set: 0.3216
-
-|     Ground Truth     |     Transcription     |
-|----------------------|-----------------------|
-|wyślij maila do mojego brata i przypomnij o rocznicy ślubu | wyślij maila do mojego bryata i przypomnij o leucnicy ślubu |
-| przypomnij mi o jutrzejszym spotkaniu godzinę wcześniej | przypomnij mi o jutrzejszym spotkaniu godziny wcześniej |
-| graj plejlistę boba dylana | graj playlistę boba delana |
-| graj ale jazz autorki sanah | graj ale jazz autorki sanah |
-| olly posłuchajmy sto jeden i trzy f. m. | olly posłuchajmy z to jeden i trzy f. m. |
+| Reference | Base model | Fine-tuned model |
+|-----------|------------|------------------|
+| wyślij maila do mojego brata i przypomnij o rocznicy ślubu | wysli myę latą mojego biata i przypamni o nici ślubu | wyślij maila do mojego bryata i przypomnij mi o lepszy ślubu |
+| przypomnij mi o jutrzejszym spotkaniu godzinę wcześniej | przypomnij mi o jutrzejszym spotkaniu godzinę wcześniej |  przypomnij mi o jutrzejszym spotkaniu godzina wcześniej |
+| graj plejlistę boba dylana | gra i play listę boba dylana | graj playlistę boba delana |
+| graj ale jazz autorki sanah | grei, al het rust autoorkisana | graj ale jazz autorki sanah |
+| olly posłuchajmy sto jeden i trzy f. m. | oli posłuchajmy sto jeden i trzefam | olly posłuchaj we z to jeden i trzy f. m. |
